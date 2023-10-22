@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>a2zmusix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    
+  </div>
+  <div class="navbar">
+    <img src="icons8-mixer-logo-64.png" alt="NAVBAR" class="logo">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SPECIFICATION</a></li>
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">CONNECT</a></li>
+      <div class="content">
+        <div class="leftCol">
+          <h1>the <br>real<br> sound</h1>
+        </div>
+      
+      <div class="rightCol">
+        <p>click to listen</p>
+        <img src="icons8-circled-play-64.png" id = "icon1" alt="pause button">
+      </div></div>
+
+    </ul>
+  </div>
+  <audio src="Damn orchestra (perfect version).mp3" id = "song" type = "audio/mp3"></audio>
+  <script> var mySong = document.getElementById("song");
+  var icon  = document.getElementById(icon1);
+    icon.onClick = function()
+      {
+        if (mySong.paused){
+          mySong.play();
+          icon1.src = "icons8-circled-pause-64.png";
+        }
+        else {
+          mySong.pause();
+        icon1.src = "icons8-circled-play-64.png";}
+      }
+    
+  </script>
+</body>
+
+</html>
